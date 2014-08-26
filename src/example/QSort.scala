@@ -18,6 +18,12 @@ object QSort {
     println()
     qsort(array)
     array.foreach((e) => print(e + " "))
+    var toSort: Array[Int] = Array[Int](100, 0, 4, 15, -2, 160, 99, -99, 23, 67, 1, 1, 0)
+    toSort.foreach((e) => print(e + " "))
+    println()
+    toSort = sort(toSort)
+    toSort.foreach((e) => print(e + " "))
+    println()
   }
 
   def qsort(ar: Array[Int]): Unit = {

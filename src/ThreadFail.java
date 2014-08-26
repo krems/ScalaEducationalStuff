@@ -1,6 +1,4 @@
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -13,6 +11,11 @@ public class ThreadFail {
 //        Object o = new Object();
 //        System.out.println(o.toString() + " hashCode = " + Integer.toHexString(o.hashCode()));
         listFillTest();
+    }
+
+    public static void m() {
+        List<Object> o = new ArrayList<>();
+        o.add("");
     }
 
     private static final List<Integer> list = new LinkedList<>();
